@@ -71,7 +71,7 @@ U8 preheat_water(void)
 			/*..sean [25-07-07] 단수 조건에서 히팅되는 문제 개선..*/
         //if ((gu8_Hot_Heater_Temperature_One_Degree >= 95) && ( gu8_hot_setting_temperature >= HOT_SET_TEMP____80oC ))		// ★2025-06-08 Phil 
         if ((gu8_Hot_Heater_Temperature_One_Degree >= 95) 
-			&& ( gu8_hot_setting_temperature >= HOT_SET_TEMP____80oC ))
+			&& ( gu8_hot_setting_temperature >= HOT_SET_TEMP____70oC ))
 			// && ( F_firstEffluent_hotWaterHeat == SET ))		            //2025-07-15 cbr 100도 추출 30초 후 재추출 시 예열생략 안되므로 스팀발생
         {
             gu8_preheat_max_timer = 0;
